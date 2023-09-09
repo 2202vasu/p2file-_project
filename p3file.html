@@ -34,6 +34,59 @@
         mult(665,989);
         mult(76,776);
           
+        function  myfunction(name){
+                console.log('hiiiiiiii  '+name);
+        }
+        myfunction('vasundhara');
+
+        function myfunctionB(Parents){
+            console.log("they are her parents "+Parents);
+            //i am gonna to execute myfunctionC
+            myfunctionC("10"+"20");//string
+            myfunctionC(10,20);//concate
+        }
+        myfunctionB(`fatherName = ramji yadav\n              
+                     motherName = sareeta yadav`);
+
+
+       function myfunctionC(try1,try2){
+           console.log(try1+try2);
+       }
+       myfunctionC("here i am calling this functinC In the finction only  "+("10769"+"8920"));  
+       myfunctionC(10,20);
+       myfunctionC("here i am calling this functinC In the finction only  "+(10769+8920));
+       //we are going to learn return keyword with function 
+
+       function text(a,b){
+        return a+b;
+       }
+            let result = text(10,778);
+            console.log(result);
+       
+            let r2 = text("sakchi"+"singh");//text is a name of function
+            console.log(r2);
+              //function defined as a perameter/argument
+            let r3 = text(23000,text("sakchi"+"singh"));
+            console.log(r3);
+
+
+            //neastead function arguments
+
+            let r4 = text(10, text(200,text(10,23467689000000000076)));
+            console.log(r4);
+
+            //deep neasted function 
+            function a(){
+                return 20;
+            }
+            function b(){
+                 return 30;
+            }
+            function c(x,y){
+                return x*y;
+            }
+            let d = c(a(),b());
+            console.log(d);
     </script>
 </body>
 </html>
