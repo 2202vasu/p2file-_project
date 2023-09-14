@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p4</title>
+</head>
+<style>
+
+</style>
+<script>
+
+</script>
+<body>
+    <script>
+        function num1(x,y){
+            return x+y;
+        }
+        let z = num1(20,30);
+        var a = num1(30,50);
+        console.log(z);
+        alert(a);//alert is a predifiend function
+
+        var b = num1(40,num1(30,50));
+         alert(b);
+         //variable contains only one value at a time
+         //so we usr array for contain so many values
+
+         var student = ["sakchi","sunita","pooja","priynka","grany","ruby"];
+
+          console.log("these are class 10th "+student[2]);
+         //array calling by function
+        function greer(r){
+            console.log("hellow   "+r+ "  how are you ");
+        }  
+        greer(student[0]);
+        greer(student);
+
+        //array calling by for loop
+        for(i=0; i<=5;i++){//function calling in the loop
+            greer("are you ok dear employe   "+ student[i]);
+        }
+       
+        
+
+    </script>
+</body>
+</html>

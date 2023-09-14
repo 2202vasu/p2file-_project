@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boj2</title>
+</head>
+<body>
+    <script>
+          let techs = ['asdaaf','uouoynnnn','kumari','gnwar'];
+         //for(singuler of purel)//pural jo h wo name of array hoga
+          for(tech of techs){
+                  console.log(tech);
+                  //code block to be execute
+          }
+           //new object practical
+          let x = {
+              //member 
+              //member;value
+              //function
+              name:"newspaper",
+              headline:"The India",
+              cc:"news of india ,its a big news for today",
+              myFuncA: function(){
+                   console.log(this.name);  
+              },
+
+              myFuncb: () => {//its returnig undifined
+               console.log(this.cc);
+              },
+
+              myFuncC: function(){
+
+              }
+          };
+          
+          
+          //function calling
+          console.log(x.name);
+          console.log(x.headline);
+          x.myFuncA();
+          x.myFuncb();//it is returnig undifined althogh we have difined
+          console.log(x.cc);
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let assi ={
+            name :'Employe',
+            "name1" :'ramji',
+            'name2' :'yadav',
+            
+            //DATA OF EMPLOY 'array as value'its call object array
+            data :['ajay yadav','vasundhra yadav','sareeta yadav'],
+           
+            //array of object[{},{},{}];
+            relatives:[{//relatives[i]
+              rel:'gyanibaba',
+              contect:'565787798'
+            },{
+               rel:'nongyani',
+               contect:'90887897'
+            }],
+
+            //js object
+            passes:{
+                name_of_pass:"ballia to itarsi",
+                p1:6544754,
+                p2:98889,
+                p3:5447,
+                future_visiting_places:['dubai','uk','bhutan','rashia']
+            
+
+          }
+          };
+          //alert(assi.name);
+          console.log(assi.name);
+          console.log(assi.data); 
+          console.log(assi.data.length);  
+          console.log('he has '+ assi.data.length+' faimely member'); 
+       //i am going to call assi.relatives.rel it [{},{}]);
+       //by using for loop
+       for(i=0; i<assi.relatives.length; i++){
+         console.log(assi.relatives[i].rel+'  '+assi.relatives[i].contect);
+       }
+        console.log(assi.passes);
+var v=['sun',assi];//array contain js object it works
+console.log(v);
+    </script>
+</body>
+</html>
